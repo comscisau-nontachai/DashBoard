@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.ReceiveProductFragment">
+
+    <LinearLayout
+    android:paddingStart="@dimen/space10"
+    android:paddingEnd="@dimen/space10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+            android:layout_width="match_parent"
+            android:background="@color/divider"
+            android:layout_height="2dp"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                tools:listitem="@layout/item_receive_product"
+                android:id="@+id/recycler_view_receive_product"
+                android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+                android:layout_width="match_parent"
+                android:text="@string/not_found_data"
+                android:id="@+id/txt_show_no_more"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textSize="@dimen/_20sdp"
+                android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</FrameLayout>

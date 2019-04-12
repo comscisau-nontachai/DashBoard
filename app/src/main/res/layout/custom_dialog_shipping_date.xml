@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/layoutRoot"
+                                   android:layout_width="match_parent"
+                                   app:cardCornerRadius="10dp"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="กำหนดลงเรือ"
+                    android:padding="@dimen/space10"
+                    android:textSize="@dimen/txt_edt_size"
+                    android:textStyle="bold"/>
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tab_default"
+                        android:hint="วว/ดด/ปปปป"
+                        android:textSize="@dimen/txt_edt_size"
+                        android:paddingStart="10dp"
+                        android:id="@+id/edt_shipping_date"
+                        android:enabled="false"
+                        />
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:padding="5dp"
+                        android:id="@+id/img_select_date_shipping"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/ic_calendar"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เลือกวันที่หยุดด้วย"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone"
+                    android:id="@+id/txt_err_shipping_select"
+                    android:textColor="@android:color/holo_red_dark"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="บันทึก"
+                    android:layout_margin="5dp"
+                    android:id="@+id/btn_save_shipping_date"
+                    android:textSize="@dimen/txt_edt_size"
+                    app:rippleColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:backgroundTint="@color/colorPrimary500"
+                    android:layout_margin="5dp"
+                    android:text="ยกเลิก"
+                    android:id="@+id/btn_cancel_shipping_date"
+                    android:textSize="@dimen/txt_edt_size"
+                    app:rippleColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

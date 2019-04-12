@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgMain"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/_TOOLBAR"
+            tools:background="@color/colorPrimary"/>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!--<FrameLayout-->
+        <!--android:id="@+id/content_frame"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <com.strubber.dashboard.utility.MyNestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/_TITLE"
+                            android:id="@+id/test_click"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:text="@string/main_title01"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_section1"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                              <!--android:orientation="vertical"-->
+                              <!--android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                            <!--style="@style/_TITLE"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginStart="32dp"-->
+                            <!--android:text="@string/main_title02"/>-->
+
+                    <!--<androidx.recyclerview.widget.RecyclerView-->
+                            <!--android:id="@+id/recycler_view_section2"-->
+                            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                              <!--android:orientation="vertical"-->
+                              <!--android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                            <!--style="@style/_TITLE"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginStart="32dp"-->
+                            <!--android:text="@string/main_title03"/>-->
+
+                    <!--<androidx.recyclerview.widget.RecyclerView-->
+                            <!--android:id="@+id/recycler_view_section3"-->
+                            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"/>-->
+
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+        </com.strubber.dashboard.utility.MyNestedScrollView>
+
+
+        <com.google.android.material.navigation.NavigationView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                android:id="@+id/navigation_view"
+                app:headerLayout="@layout/nav_header_drawer"
+                app:menu="@menu/menu_nav_drawer"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
+

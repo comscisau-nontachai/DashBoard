@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_btn_size">25sp</dimen>
+    <dimen name="txt_edt_size">25sp</dimen>
+
+    <dimen name="space10">10dp</dimen>
+</resources>

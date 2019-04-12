@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/fc_active_regular</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Splash SC-->
+    <style name="_SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <!--TOOLBAR-->
+    <style name="_TOOLBAR" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:popupTheme">@style/Theme.AppCompat.Light</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!--TITLE-->
+    <style name="_TITLE">
+        <item name="android:textSize">@dimen/txt_edt_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+
+</resources>

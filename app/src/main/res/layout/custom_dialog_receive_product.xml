@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:id="@+id/layoutRoot"
+                                   android:layout_width="match_parent"
+                                   app:cardCornerRadius="10dp"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="พาร์ทนัมเบอร์"
+                    android:id="@+id/txt_label_partnumber"
+                    android:textSize="@dimen/txt_edt_size"
+                    android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    tools:text="P15651"
+                    android:id="@+id/edt_dialog_partnumber"
+                    android:enabled="false"
+                    android:paddingStart="@dimen/space10"
+                    android:textSize="@dimen/txt_edt_size"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เลขที่ออเดอร์ "
+                    android:textSize="@dimen/txt_edt_size"
+                    android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    tools:text="esdfsd-sdf"
+                    android:enabled="false"
+                    android:id="@+id/edt_dialog_order"
+                    android:textSize="@dimen/txt_edt_size"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จำนวน "
+                    android:textSize="@dimen/txt_edt_size"
+                    android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    tools:text="10"
+                    android:enabled="false"
+                    android:id="@+id/edt_dialog_qty"
+                    android:textSize="@dimen/txt_edt_size"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จำนวนที่รับ "
+                    android:textSize="@dimen/txt_edt_size"
+                    android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/txt_edt_size"
+                    android:inputType="number"
+                    android:id="@+id/edt_dialog_receive_number"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="บันทึก"
+                    android:layout_margin="5dp"
+                    android:id="@+id/btn_save_receive_product"
+                    android:textSize="@dimen/txt_edt_size"
+                    app:rippleColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:backgroundTint="@color/colorPrimary500"
+                    android:layout_margin="5dp"
+                    android:text="ยกเลิก"
+                    android:id="@+id/btn_cancel_receive_product"
+                    android:textSize="@dimen/txt_edt_size"
+                    app:rippleColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

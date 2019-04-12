@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:orientation="vertical"
+                                   android:layout_width="110dp"
+                                   android:layout_height="wrap_content"
+                                   android:foreground="?android:attr/selectableItemBackground"
+                                   android:clickable="true"
+                                   android:id="@+id/card_view_item"
+                                   android:focusable="true"
+                                   android:layout_margin="4dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_select_item"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_ship"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/txt_title_item"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/txt_edt_size"
+                android:maxLines="1"
+                android:text="กำหนดลงเรือ"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

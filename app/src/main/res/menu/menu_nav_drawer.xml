@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:title="ติดตามงาน">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                        android:icon="@drawable/ic_person"
+                        android:id="@+id/nav_shipping_date"
+                        android:title="กำหนดลงเรือ" />
+                <item
+                        android:icon="@drawable/ic_person"
+                        android:id="@+id/nav_receive_product"
+                        android:title="รับสินค้า" />
+                <item
+                        android:icon="@drawable/ic_person"
+                        android:id="@+id/nav_check_bill"
+                        android:title="ตรวจบิลขาย" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
