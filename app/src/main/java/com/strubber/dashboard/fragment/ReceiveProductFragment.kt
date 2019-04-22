@@ -58,8 +58,8 @@ class ReceiveProductFragment : androidx.fragment.app.Fragment() {
             show()
         }
 
-        val url = "http://192.168.20.226:8081/api/get_receive_product_data_list.php"
-        //val url = "http://jobtackingsoftware.strubberdata.com/api/get_receive_product_data_list.php/"
+//        val url = "http://192.168.20.226:8081/api/get_receive_product_data_list.php"
+        val url = "http://jobtackingsoftware.strubberdata.com/api/get_receive_product_data_list.php/"
         val request = object : StringRequest(Request.Method.POST,url,
             Response.Listener<String> {
                 listReceiveProduct.clear()

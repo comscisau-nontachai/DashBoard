@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DashBoard</string>
+    <string name="app_name">S.T. DATA</string>
     <string name="copyright">&#169; 2019 Modern plus software solution : M\'Plus Team | By : NOntachai J</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -9,9 +9,6 @@
     <string name="main_title02">coming soon</string>
     <string name="main_title03">coming soon</string>
     <string name="not_found_data">ไม่พบข้อมูล</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

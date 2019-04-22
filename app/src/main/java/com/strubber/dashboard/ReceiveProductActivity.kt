@@ -158,8 +158,8 @@ class ReceiveProductActivity : AppCompatActivity() {
     }
 
     fun getAllBadgeReceiveProduct(saleID: String) {
-        val url = "http://192.168.20.226:8081/api/get_badge_receive_product.php?id=$saleID"
-        //val url = "http://jobtackingsoftware.strubberdata.com/api/get_badge_receive_product.php/"
+//        val url = "http://192.168.20.226:8081/api/get_badge_receive_product.php?id=$saleID"
+        val url = "http://jobtackingsoftware.strubberdata.com/api/get_badge_receive_product.php?id=$saleID"
         val request = JsonArrayRequest(Request.Method.GET, url, null,
             Response.Listener {
                 for (i in 0 until it.length()) {

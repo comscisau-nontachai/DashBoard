@@ -81,8 +81,8 @@ class BillCheckActivity : AppCompatActivity() {
     private fun getCheckBillList(saleID: String) {
         listCheckBill.clear()
 
-        val url = "http://192.168.20.226:8081/api/get_check_bill_data_list.php?id=$saleID"
-//        val url = "http://jobtackingsoftware.strubberdata.com/api/get_check_bill_data_list.php?id=$id"
+//        val url = "http://192.168.20.226:8081/api/get_check_bill_data_list.php?id=$saleID"
+        val url = "http://jobtackingsoftware.strubberdata.com/api/get_check_bill_data_list.php?id=$saleID"
 
         val dialogLoading = SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE).apply {
             contentText = "กำลังโหลดข้อมูล..."

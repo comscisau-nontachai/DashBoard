@@ -59,8 +59,8 @@ class CheckbillAdapter(val context: Context, val list: ArrayList<CheckBillDataMo
     }
 
     private fun updateCheckBill(ivID: String, name: String,position:Int) {
-        val url = "http://192.168.20.226:8081/api/update_check_bill.php/"
-        //val url = "http://jobtackingsoftware.strubberdata.com/api/update_check_bill.php/"
+//        val url = "http://192.168.20.226:8081/api/update_check_bill.php/"
+        val url = "http://jobtackingsoftware.strubberdata.com/api/update_check_bill.php/"
 
         val dialogSaving = SweetAlertDialog(context,SweetAlertDialog.PROGRESS_TYPE).apply {
             contentText = "กำลังบันทึกข้อมูล..."

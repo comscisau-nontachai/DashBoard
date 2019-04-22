@@ -93,6 +93,10 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
         return super.onOptionsItemSelected(item)
     }
 
+    override fun onBackPressed() {
+//        super.onBackPressed()
+    }
+
     private fun setProfileNavDrawer() {
         val headerView = navigation_view.getHeaderView(0)
         val headerName = headerView.findViewById<TextView>(R.id.txt_header_name)

@@ -97,8 +97,8 @@ class ShippingAdapter(val context: Context, val list: ArrayList<ShippingDataMode
 
             val selectDate = SimpleDateFormat("dd/MM/yyyy").parse(shippingDateSelect)
 
-            val url = "http://192.168.20.226:8081/api/insert_shipping_date.php/"
-            //val url = "http://jobtackingsoftware.strubberdata.com/api/insert_shipping_date.php/"
+//            val url = "http://192.168.20.226:8081/api/insert_shipping_date.php/"
+            val url = "http://jobtackingsoftware.strubberdata.com/api/insert_shipping_date.php/"
             val stringRequest = object : StringRequest(
                 Request.Method.POST, url,
                 Response.Listener { s ->
