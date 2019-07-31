@@ -115,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
                 }
             },
             Response.ErrorListener {
-                Toast.makeText(applicationContext, "can't connect to server!!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "can't connect to server!! ${it.message}", Toast.LENGTH_SHORT).show()
                 dialogLoading.dismissWithAnimation()
             })
 

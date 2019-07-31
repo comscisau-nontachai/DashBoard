@@ -147,6 +147,7 @@ class ReceiveProductActivity : AppCompatActivity() {
                 Toast.makeText(this, "can't connect to server.", Toast.LENGTH_SHORT).show()
             })
         val queue = Volley.newRequestQueue(this)
+        //queue.add(request)
         queue.add(request)
     }
 

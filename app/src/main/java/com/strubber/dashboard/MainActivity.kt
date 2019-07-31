@@ -88,13 +88,15 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
-            R.id.nav_exit -> onBackPressed()
+            R.id.nav_exit -> {
+                //Toast.makeText(this, "exit app", Toast.LENGTH_SHORT).show()
+                finish()
+            }
         }
         return super.onOptionsItemSelected(item)
     }
 
     override fun onBackPressed() {
-//        super.onBackPressed()
     }
 
     private fun setProfileNavDrawer() {

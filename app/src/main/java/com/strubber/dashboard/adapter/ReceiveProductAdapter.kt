@@ -93,7 +93,7 @@ class ReceiveProductAdapter(val context: Context, val list: ArrayList<ReceivePro
                 if (edtReceiveQty.text.toString() != "") {
 
                     val qtyReceive = edtReceiveQty.text.toString().toInt()
-                    if(qtyReceive < qty.toInt() && qtyReceive <= list[position].qtyRemain.toInt()){
+                    if(qtyReceive <= qty.toInt() || qtyReceive <= list[position].qtyRemain.toInt()){
                         //do
                         Log.d(TAG, "do this: ")
 
@@ -133,7 +133,7 @@ class ReceiveProductAdapter(val context: Context, val list: ArrayList<ReceivePro
 
     private fun saveReceiveProduct(func: String, id: String, part_id: String, qtyReceive: String, tsName: String) {
 //        val url = "http://192.168.20.226:8081/api/save_receive_product.php/"
-        val url = "http://jobtackingsoftware.strubberdata.com/api/update_check_bill.php/"
+        val url = "http://jobtackingsoftware.strubberdata.com/api/save_receive_product.php/"
 
         val dialogSaving = SweetAlertDialog(context, SweetAlertDialog.PROGRESS_TYPE).apply {
             contentText = "กำลังบันทึกข้อมูล..."
